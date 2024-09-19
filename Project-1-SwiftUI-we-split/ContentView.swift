@@ -14,15 +14,26 @@ struct ContentView: View {
     @State private var tipPercentage = 20
     
     let tipPercentages = [10, 15, 20, 25, 0]
+    
+    let currencyFormat = Locale.current.currency?.identifier ?? "USD"
 
     
     var body: some View {
         Form {
             Section {
-                TextField("Amount", value: $checkAmount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                Text("Local Currency: \(currencyFormat)")
+                TextField(
+                    "Amount",
+                    value: $checkAmount,
+                    format: .currency(code: currencyFormat)
+                )
+                .keyboardType(.numberPad)
+            }
+            
+            Section("Total Amount"){
+                Text(checkAmount, format: .currency(code: currencyFormat))
             }
         }
-        Text(Locale.current.currency?.identifier ?? "")
     }
 }
 
