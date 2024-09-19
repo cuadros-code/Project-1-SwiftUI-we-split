@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B47F6332C9CDC5D00E1BFF3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1BB581A72C9B9CC5004CC063 /* Project-1-SwiftUI-we-split.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project-1-SwiftUI-we-split.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BB581AA2C9B9CC5004CC063 /* Project_1_SwiftUI_we_splitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_1_SwiftUI_we_splitApp.swift; sourceTree = "<group>"; };
 		1BB581AC2C9B9CC5004CC063 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 				1BB581AC2C9B9CC5004CC063 /* ContentView.swift */,
 				1BB581AE2C9B9CC6004CC063 /* Assets.xcassets */,
 				1BB581B02C9B9CC6004CC063 /* Preview Content */,
+				1B47F6332C9CDC5D00E1BFF3 /* README.md */,
 			);
 			path = "Project-1-SwiftUI-we-split";
 			sourceTree = "<group>";
