@@ -22,12 +22,13 @@ struct ContentView: View {
         Form {
             Section {
                 Text("Local Currency: \(currencyFormat)")
-                TextField(
-                    "Amount",
-                    value: $checkAmount,
-                    format: .currency(code: currencyFormat)
-                )
-                .keyboardType(.numberPad)
+                TextField("Amount", value: $checkAmount, format: .currency(code: currencyFormat))
+                    .keyboardType(.numberPad)
+                Picker("Number of people", selection: $numberOfPeople) {
+                    ForEach(2..<100, id: \.self){
+                        Text("\($0) people")
+                    }
+                }
             }
             
             Section("Total Amount"){
