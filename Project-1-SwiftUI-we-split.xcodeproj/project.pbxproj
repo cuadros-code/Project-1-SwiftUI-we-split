@@ -36,6 +36,7 @@
 		1BB5819E2C9B9CC5004CC063 = {
 			isa = PBXGroup;
 			children = (
+				1B47F6332C9CDC5D00E1BFF3 /* README.md */,
 				1BB581A92C9B9CC5004CC063 /* Project-1-SwiftUI-we-split */,
 				1BB581A82C9B9CC5004CC063 /* Products */,
 			);
@@ -56,7 +57,6 @@
 				1BB581AC2C9B9CC5004CC063 /* ContentView.swift */,
 				1BB581AE2C9B9CC6004CC063 /* Assets.xcassets */,
 				1BB581B02C9B9CC6004CC063 /* Preview Content */,
-				1B47F6332C9CDC5D00E1BFF3 /* README.md */,
 			);
 			path = "Project-1-SwiftUI-we-split";
 			sourceTree = "<group>";
