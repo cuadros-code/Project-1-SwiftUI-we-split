@@ -19,22 +19,30 @@ struct ContentView: View {
 
     
     var body: some View {
-        Form {
-            Section {
-                Text("Local Currency: \(currencyFormat)")
-                TextField("Amount", value: $checkAmount, format: .currency(code: currencyFormat))
-                    .keyboardType(.numberPad)
-                Picker("Number of people", selection: $numberOfPeople) {
-                    ForEach(2..<100, id: \.self){
-                        Text("\($0) people")
+        NavigationStack {
+            Form {
+                Section {
+                    Text("Local Currency: \(currencyFormat)")
+                    TextField("Amount", value: $checkAmount, format: .currency(code: currencyFormat))
+                        .keyboardType(.numberPad)
+                    
+                    Picker("Number of people", selection: $numberOfPeople) {
+                        ForEach(2..<100, id: \.self){
+                            Text("\($0) people")
+                        }
                     }
+                    .pickerStyle(.navigationLink)
+                }
+                
+                Section("Resume"){
+                    Text(checkAmount, format: .currency(code: currencyFormat))
+                    Text("Number of people \(numberOfPeople)")
                 }
             }
-            
-            Section("Total Amount"){
-                Text(checkAmount, format: .currency(code: currencyFormat))
-            }
+            .navigationTitle("WeSplit")
+            .navigationBarTitleDisplayMode(.inline)
         }
+        
     }
 }
 
